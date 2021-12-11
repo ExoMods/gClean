@@ -12,6 +12,7 @@ A Garry's Mod Utility to Clean the Game of it's pesky ban traces
 <li>Simple (although skiddy) Code</li>
 <li>Cleans G-Mod Quickly</li>
 <li>Works against SuchtBunker Banning</li>
+<li>Happy Trolling 🎉</li>
 </ul>
 <p>&nbsp;</p>
 <h1 style="color: #5e9ca0;"><span style="color: #2b2301;">📷Preview:</span></h1>
