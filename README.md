@@ -1,6 +1,6 @@
 # 🎩gClean
 
-<img alt="GitHub all releases" src="https://img.shields.io/github/downloads/ExoMods/gClean/total"> <a href="https://github.com/ExoMods/gClean/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/ExoMods/gClean"></a>
+<img alt="GitHub all releases" src="https://img.shields.io/github/downloads/ExoMods/gClean/total?style=plastic"> <a href="https://github.com/ExoMods/gClean/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/ExoMods/gClean"></a>
 
 A Garry's Mod Utility to Clean the Game of it's pesky ban traces
 
