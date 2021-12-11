@@ -14,12 +14,10 @@ A Garry's Mod Utility to Clean the Game of it's pesky ban traces
 <li>Works against SuchtBunker Banning</li>
 <li>Happy Trolling 🎉</li>
 </ul>
-<p>&nbsp;</p>
 <h1 style="color: #5e9ca0;"><span style="color: #2b2301;">📷Preview:</span></h1>
 <p><video controls="controls" width="294" height="147">
 <p>&nbsp;</p>
-<p><strong>&nbsp;</strong></p>
-  
+
 ![gClean Preview](https://i.imgur.com/AZlWpCe.png)
 
   
