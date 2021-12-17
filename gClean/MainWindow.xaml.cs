@@ -74,6 +74,12 @@ namespace gClean
                     Directory.Delete(path + upath, true);
                 }
 
+
+                if (Directory.Exists(path + wcpath))
+                {
+                    Directory.Delete(path + wcpath, true);
+                }
+
                 if (Directory.Exists(path + dupepath))
                 {
                     Directory.Delete(path + dupepath, true);
