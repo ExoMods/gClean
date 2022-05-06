@@ -47,18 +47,22 @@ namespace gClean
         {
             string path = textbox.Text;
             string dpath = "\\garrysmod\\data";
+            string apath = "\\garrysmod\\addons";
             string cpath = "\\garrysmod\\cache\\lua";
             string upath = "\\garrysmod\\download\\user_custom";
             string wcpath = "\\garrysmod\\cache\\workshop";
             string dupepath = "\\garrysmod\\dupes";
             string savepath = "\\garrysmod\\saves";
             string demopath = "\\garrysmod\\demos";
-            // MessageBox.Show(textbox.Text + dpath); // <-- helps with checking strings work correctly
+            string configpath = "\\garrysmod\\cfg";
+            string luapath = "\\garrysmod\\lua";
+            // MessageBox.Show(textbox.Text + dpath);
 
 
             if (Directory.Exists(path))
             {
                 var lw = new LoadingWindow();  // The following code is very skiddy, please don't judge me
+                
                 if (Directory.Exists(path + dpath))
                 {
                     Directory.Delete(path + dpath, true);
@@ -74,10 +78,14 @@ namespace gClean
                     Directory.Delete(path + upath, true);
                 }
 
-
-                if (Directory.Exists(path + wcpath))
+                if (Directory.Exists(path + configpath))
                 {
-                    Directory.Delete(path + wcpath, true);
+                    Directory.Delete(path + configpath, true);
+                }
+
+                if (Directory.Exists(path + luapath))
+                {
+                    Directory.Delete(path + luapath, true);
                 }
 
                 if (Directory.Exists(path + dupepath))
@@ -95,9 +103,16 @@ namespace gClean
                     Directory.Delete(path + demopath, true);
                 }
 
+                if (Directory.Exists(path + apath))
+                {
+                    Directory.Delete(path + apath, true);
+                }
 
-                // the following code is for removing the .cache files within the workshop folder, some sophisticated servers leave traces there. thanks stackoverflow
-                DirectoryInfo di = new DirectoryInfo(@path + wcpath);
+                // the following code is for removing the .cache files within the workshop folder, some sophisticated servers may leave traces there. 
+
+                if (Directory.Exists(path + wcpath))
+                {
+                DirectoryInfo di = new DirectoryInfo(path + wcpath);
                 FileInfo[] files = di.GetFiles("*.cache")
                                      .Where(p => p.Extension == ".cache").ToArray();
                 foreach (FileInfo file in files)
@@ -107,8 +122,7 @@ namespace gClean
                         File.Delete(file.FullName);
                     }
                     catch { }
-
-
+                }
 
                 if (File.Exists(path + "\\garrysmod\\cl.db"))
                 {
@@ -123,6 +137,11 @@ namespace gClean
                 if (File.Exists(path + "\\garrysmod\\sv.db"))
                 {
                     File.Delete(path + "\\garrysmod\\sv.db");
+                }
+
+                if (File.Exists(path + "\\garrysmod\\settings\\users.txt"))
+                {
+                    File.Delete(path + "\\garrysmod\\settings\\users.txt");
                 }
 
 
@@ -166,6 +185,16 @@ namespace gClean
         private void textbox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }
