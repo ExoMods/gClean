@@ -34,7 +34,7 @@ namespace gClean
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void timer_tick(object sender, EventArgs e)
@@ -57,6 +57,7 @@ namespace gClean
             string configpath = "\\garrysmod\\cfg";
             string luapath = "\\garrysmod\\lua";
             // MessageBox.Show(textbox.Text + dpath);
+
 
 
             if (Directory.Exists(path))
@@ -103,10 +104,15 @@ namespace gClean
                     Directory.Delete(path + demopath, true);
                 }
 
-                if (Directory.Exists(path + apath))
+                if (cbox.IsChecked == true)
                 {
-                    Directory.Delete(path + apath, true);
-                }
+                    if (Directory.Exists(path + apath))
+                    {
+                        Directory.Delete(path + apath, true);
+                    }
+                } 
+
+
 
                 // the following code is for removing the .cache files within the workshop folder, some sophisticated servers may leave traces there. 
 
@@ -184,8 +190,9 @@ namespace gClean
 
         private void textbox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            
         }
+
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
@@ -195,6 +202,16 @@ namespace gClean
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
             
+        }
+
+        private void cbox_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void cbox_Unchecked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

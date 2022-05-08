@@ -7,7 +7,7 @@
         xmlns:xf="clr-namespace:XamlFlair;assembly=XamlFlair.WPF"
         xmlns:local="clr-namespace:gClean"
         mc:Ignorable="d"
-        Title="gClean" Height="290.398" Width="370" ResizeMode="NoResize" WindowStyle="SingleBorderWindow" Background="#FF252525" Closed="Window_Closed" Loaded="Window_Loaded">
+        Title="gClean" Height="304.898" Width="370" ResizeMode="NoResize" WindowStyle="SingleBorderWindow" Background="#FF252525" Closed="Window_Closed" Loaded="Window_Loaded">
     <Grid Background="#FF191818" RenderTransformOrigin="0.501,0.527">
 
         <Grid.ColumnDefinitions>
@@ -23,11 +23,12 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <fa:ImageAwesome Icon="FolderOpen" Margin="28,142,302,89" Foreground="White" Opacity="0.1"/>
+        <fa:ImageAwesome Icon="FolderOpen" Margin="20,138,310,94" Foreground="White" Opacity="0.1"/>
         <Label Content="gClean" Margin="108,10,106,0" VerticalAlignment="Top" Foreground="White" FontSize="41" Height="70" FontWeight="Bold"/>
         <TextBox x:Name="textbox" HorizontalAlignment="Left" Height="29" Margin="54,142,0,0" TextWrapping="Wrap" x:FieldModifier="public" Text="Your G-Mod Path (ex. C:\garrysmod)" VerticalAlignment="Top" Width="231" Background="{x:Null}" Foreground="#FF747474" SelectionBrush="#FF2E8CDA" BorderBrush="{x:Null}" FontSize="10" TextChanged="textbox_TextChanged"/>
-        <Label Content="&quot;glorified gmod FactoryReset-GMOD.bat&quot;" HorizontalAlignment="Left" Margin="41,80,0,0" VerticalAlignment="Top" Foreground="#FF747474" FontStyle="Italic" Height="30" Width="294" HorizontalContentAlignment="Center"/>
+        <Label Content="&quot;glorified FactoryReset-GMOD.bat&quot;" HorizontalAlignment="Left" Margin="41,80,0,0" VerticalAlignment="Top" Foreground="#FF747474" FontStyle="Italic" Height="30" Width="294" HorizontalContentAlignment="Center"/>
         <Button Content="Settings" HorizontalAlignment="Left" Margin="292,187,0,0" VerticalAlignment="Top" Width="52" Height="49" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}" Click="Button_Click_3" Opacity="0.1"/>
-        <Label Content="v1" HorizontalAlignment="Left" Margin="108,41,-38,0" VerticalAlignment="Top" Foreground="#FF747474" FontStyle="Italic" Height="30" Width="294" HorizontalContentAlignment="Center" Grid.ColumnSpan="2" FontWeight="Bold"/>
+        <Label Content="v1.2" HorizontalAlignment="Left" Margin="115,41,-38,0" VerticalAlignment="Top" Foreground="#FF747474" FontStyle="Italic" Height="30" Width="287" HorizontalContentAlignment="Center" Grid.ColumnSpan="2" FontWeight="Bold"/>
+        <CheckBox x:Name="cbox" Content="Also clean /addons folder (Recommended)" HorizontalAlignment="Left" Margin="28,243,0,0" VerticalAlignment="Top" Foreground="#FF747474" Checked="cbox_Checked" Unchecked="cbox_Unchecked" IsChecked="True"/>
     </Grid>
 </Window>
